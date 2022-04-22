@@ -5,12 +5,11 @@ using UnityEngine;
 public class BallMovement : MonoBehaviour
 {
     #region Public Variables
+    public float rndSpeed;
     #endregion
     #region Inspector Variables
-    [SerializeField] private float rndSpeed;
     #endregion
     #region Private Variable
-    private float speed;
     #endregion
     #region Components
     Rigidbody2D rb;
@@ -36,6 +35,7 @@ public class BallMovement : MonoBehaviour
     #region Methods
     private void RndDirection()
     {
+        rndSpeed = 5f;
         Vector2 direction = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
         direction.Normalize();
         Vector2 newVelocity = rndSpeed * direction;
@@ -46,7 +46,7 @@ public class BallMovement : MonoBehaviour
     #endregion
 
     #region Coroutines
-    IEnumerator BallMove()
+    public IEnumerator BallMove()
     {
         yield return new WaitForSeconds(1);
         RndDirection();
