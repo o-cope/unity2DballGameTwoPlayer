@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ball
+  - yellowWildcard
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 333333333
+    locked: 0
+  - name: Wildcards
+    uniqueID: 347358485
     locked: 0

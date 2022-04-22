@@ -12,13 +12,18 @@ public class Wildcard : MonoBehaviour
     [SerializeField] private GameObject spawnRange;
     #endregion
     #region Private Variables
+    private float spawnTimer = 0f;
+    private bool timerstatus = true;
+    private float limit = 10f;
     #endregion
     #region Components
     #endregion
 
-    private void Start()
+
+
+    private void Update()
     {
-        SpawnObjects();
+        SpawnRate();
     }
 
 
@@ -46,14 +51,19 @@ public class Wildcard : MonoBehaviour
         }
     }
 
-    private void DestroyObjects()
+    private void SpawnRate()
     {
-        foreach(GameObject o in GameObject.FindGameObjectsWithTag("Spawnable"))
+        if (timerstatus)
         {
-            Destroy(o);
+            spawnTimer += Time.deltaTime;
+        }
+
+        if (spawnTimer > limit)
+        {
+            SpawnObjects();
+            spawnTimer = 0f;
         }
     }
-
 
     #endregion
 
