@@ -23,27 +23,38 @@ public class BallMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            rndSpeed = 0;
-            StartCoroutine(BallMove());
-        }
+        ResetBallDirection();
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = rndSpeed * (rb.velocity.normalized);
+        BallSpeedConstant();
     }
 
 
     #region Methods
-    private void RndDirection()
+
+    private void BallSpeedConstant()
+    {
+        rb.velocity = rndSpeed * (rb.velocity.normalized);
+    }
+
+    private void BallRndDirection()
     {
         rndSpeed = 5f;
         Vector2 direction = new Vector2(Random.Range(-1f, 1f), Random.Range(-0.1f, 0.1f));
         direction.Normalize();
         Vector2 newVelocity = rndSpeed * direction;
         transform.GetComponent<Rigidbody2D>().velocity = newVelocity;
+    }
+
+    private void ResetBallDirection()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            rndSpeed = 0;
+            StartCoroutine(BallMove());
+        }
     }
 
 
@@ -53,7 +64,7 @@ public class BallMovement : MonoBehaviour
     public IEnumerator BallMove()
     {
         yield return new WaitForSeconds(1);
-        RndDirection();
+        BallRndDirection();
     }
 
     #endregion
