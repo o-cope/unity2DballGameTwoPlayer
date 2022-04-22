@@ -591,6 +591,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &607672654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1720842561341460210, guid: 43d0be4e76554f14e8d7a5ddbf90f766, type: 3}
+  m_PrefabInstance: {fileID: 8478407884426304494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &616471032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,7 +749,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2102769706}
-        m_TargetAssemblyTypeName: ResetButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: ResetCurrentScene
         m_Mode: 1
         m_Arguments:
@@ -1200,6 +1205,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498299343}
   m_CullTransparentMesh: 1
+--- !u!1 &1646801731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5948106897162658437, guid: 9fff20073fcb29c44ba6b7dd6e3a915b, type: 3}
+  m_PrefabInstance: {fileID: 5001883472163436671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1664439226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7723437919460320523, guid: aca7e3ae926f6664ab77ce9f93debafb, type: 3}
@@ -1398,7 +1408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2102769704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f293fa86550ec564e85e398ec5dc30ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b19b0b4b45bd9046a9fff00355af6d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1264781151957772000
@@ -1781,6 +1791,14 @@ PrefabInstance:
       propertyPath: playerRight
       value: 
       objectReference: {fileID: 1432894839}
+    - target: {fileID: 8939471903430885730, guid: 8ab704755dbf33543a8a08d3ab7ce26c, type: 3}
+      propertyPath: playerLeftGoalKeeper
+      value: 
+      objectReference: {fileID: 607672654}
+    - target: {fileID: 8939471903430885730, guid: 8ab704755dbf33543a8a08d3ab7ce26c, type: 3}
+      propertyPath: playerRightGoalKeeper
+      value: 
+      objectReference: {fileID: 1646801731}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab704755dbf33543a8a08d3ab7ce26c, type: 3}
 --- !u!1001 &7723437921050801841
@@ -1810,6 +1828,14 @@ PrefabInstance:
       propertyPath: playerRight
       value: 
       objectReference: {fileID: 1432894839}
+    - target: {fileID: 3380251403015717449, guid: aca7e3ae926f6664ab77ce9f93debafb, type: 3}
+      propertyPath: playerLeftGoalKeeper
+      value: 
+      objectReference: {fileID: 607672654}
+    - target: {fileID: 3380251403015717449, guid: aca7e3ae926f6664ab77ce9f93debafb, type: 3}
+      propertyPath: playerRightGoalKeeper
+      value: 
+      objectReference: {fileID: 1646801731}
     - target: {fileID: 7723437919460320520, guid: aca7e3ae926f6664ab77ce9f93debafb, type: 3}
       propertyPath: m_Name
       value: goalPointRight

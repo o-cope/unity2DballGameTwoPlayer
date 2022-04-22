@@ -9,7 +9,7 @@ public class LeftPlayerMove : MonoBehaviour
     #region Inspector Variables
     [SerializeField] private float moveSpeed;
     #endregion
-    #region Private Variable
+    #region Private Variables
     private float yInput;
     #endregion
     #region Components
@@ -23,12 +23,24 @@ public class LeftPlayerMove : MonoBehaviour
 
     private void Update()
     {
-        yInput = Input.GetAxis("PlayerLeft");
+        GetMoveInput();
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(0 , yInput * moveSpeed);
+        MovePlayer();
     }
+
+    #region Methods
+    private void MovePlayer()
+    {
+        rb.velocity = new Vector2(0, yInput * moveSpeed);
+    }
+
+    private void GetMoveInput()
+    {
+        yInput = Input.GetAxis("PlayerLeft");
+    }
+    #endregion
 
 }

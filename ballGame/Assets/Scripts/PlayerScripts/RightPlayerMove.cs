@@ -15,7 +15,6 @@ public class RightPlayerMove : MonoBehaviour
     #region Components
     Rigidbody2D rb;
     #endregion
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,12 +22,24 @@ public class RightPlayerMove : MonoBehaviour
 
     private void Update()
     {
-        yInput = Input.GetAxis("PlayerRight");
+        GetMoveInput();
     }
 
     private void FixedUpdate()
     {
+        MovePlayer();
+    }
+
+    #region Methods
+    private void MovePlayer()
+    {
         rb.velocity = new Vector2(0, yInput * moveSpeed);
     }
+
+    private void GetMoveInput()
+    {
+        yInput = Input.GetAxis("PlayerRight");
+    }
+    #endregion
 
 }

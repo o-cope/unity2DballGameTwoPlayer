@@ -9,7 +9,7 @@ public class BallMovement : MonoBehaviour
     #endregion
     #region Inspector Variables
     #endregion
-    #region Private Variable
+    #region Private Variables
     #endregion
     #region Components
     Rigidbody2D rb;
