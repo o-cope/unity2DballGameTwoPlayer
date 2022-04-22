@@ -1792,6 +1792,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1432894839}
     - target: {fileID: 8939471903430885730, guid: 8ab704755dbf33543a8a08d3ab7ce26c, type: 3}
+      propertyPath: playerLeftGK
+      value: 
+      objectReference: {fileID: 607672654}
+    - target: {fileID: 8939471903430885730, guid: 8ab704755dbf33543a8a08d3ab7ce26c, type: 3}
+      propertyPath: playerRightGK
+      value: 
+      objectReference: {fileID: 1646801731}
+    - target: {fileID: 8939471903430885730, guid: 8ab704755dbf33543a8a08d3ab7ce26c, type: 3}
       propertyPath: playerLeftGoalKeeper
       value: 
       objectReference: {fileID: 607672654}
@@ -1828,6 +1836,14 @@ PrefabInstance:
       propertyPath: playerRight
       value: 
       objectReference: {fileID: 1432894839}
+    - target: {fileID: 3380251403015717449, guid: aca7e3ae926f6664ab77ce9f93debafb, type: 3}
+      propertyPath: playerLeftGK
+      value: 
+      objectReference: {fileID: 607672654}
+    - target: {fileID: 3380251403015717449, guid: aca7e3ae926f6664ab77ce9f93debafb, type: 3}
+      propertyPath: playerRightGK
+      value: 
+      objectReference: {fileID: 1646801731}
     - target: {fileID: 3380251403015717449, guid: aca7e3ae926f6664ab77ce9f93debafb, type: 3}
       propertyPath: playerLeftGoalKeeper
       value: 
