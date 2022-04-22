@@ -41,6 +41,7 @@ public class GoalScoreLeft : MonoBehaviour
         if (other.CompareTag("ball"))
         {
             AddScore();
+            DeleteWildcards();
         }
     }
 
@@ -61,6 +62,11 @@ public class GoalScoreLeft : MonoBehaviour
         playerLeftGK.transform.position = playerLeftGKPosition;
         playerRight.transform.position = playerRightPosition;
         playerRightGK.transform.position = playerRightGKPosition;
+    }
+
+    private void DeleteWildcards()
+    {
+        Destroy(GameObject.FindGameObjectWithTag("yellowWildcard"));
     }
     #endregion
 }

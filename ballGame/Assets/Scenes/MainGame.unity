@@ -1874,10 +1874,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74fa1419ecf73284f9e033426dcc279a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnTimer: 0
   numToSpawn: 1
   spawnPool:
   - {fileID: 4521062381357697584, guid: 220762a8017be624d9b70e7a135a477f, type: 3}
   spawnRange: {fileID: 390388237}
+  limit: 10
 --- !u!4 &1780240372
 Transform:
   m_ObjectHideFlags: 0

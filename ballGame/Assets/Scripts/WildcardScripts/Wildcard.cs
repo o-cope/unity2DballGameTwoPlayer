@@ -5,16 +5,16 @@ using UnityEngine;
 public class Wildcard : MonoBehaviour
 {
     #region Public Variables
+    public float spawnTimer = 0f;
     #endregion
     #region Inspector Variables
     [SerializeField] private int numToSpawn;
     [SerializeField] private List<GameObject> spawnPool;
     [SerializeField] private GameObject spawnRange;
+    [SerializeField] float limit = 10f;
     #endregion
     #region Private Variables
-    private float spawnTimer = 0f;
     private bool timerstatus = true;
-    private float limit = 10f;
     #endregion
     #region Components
     #endregion
