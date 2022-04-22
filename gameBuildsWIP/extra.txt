@@ -1,1 +1,2 @@
 press r to randomise ball direction if stuck
+esc for pause
