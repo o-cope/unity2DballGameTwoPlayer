@@ -11,15 +11,19 @@ public class WildcardSpawn : MonoBehaviour
     [SerializeField] private int numToSpawn;
     [SerializeField] private List<GameObject> spawnPool;
     [SerializeField] private GameObject spawnRange;
-    [SerializeField] float limit = 10f;
+    [SerializeField] float spawnSpeed = 10f;
     #endregion
     #region Private Variables
     private bool timerstatus = true;
     #endregion
     #region Components
+    AudioSource popClip;
     #endregion
 
-
+    private void Start()
+    {
+        popClip = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -48,6 +52,7 @@ public class WildcardSpawn : MonoBehaviour
 
             pos = new Vector2(screenX, screenY);
             Instantiate(toSpawn, pos, toSpawn.transform.rotation);
+            popClip.Play();
         }
     }
 
@@ -58,7 +63,7 @@ public class WildcardSpawn : MonoBehaviour
             spawnTimer += Time.deltaTime;
         }
 
-        if (spawnTimer > limit)
+        if (spawnTimer > spawnSpeed)
         {
             SpawnObjects();
             spawnTimer = 0f;

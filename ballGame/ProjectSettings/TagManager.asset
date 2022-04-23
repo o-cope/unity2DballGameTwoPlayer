@@ -5,7 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ball
-  - yellowWildcard
+  - wildcardSpeed
   layers:
   - Default
   - TransparentFX

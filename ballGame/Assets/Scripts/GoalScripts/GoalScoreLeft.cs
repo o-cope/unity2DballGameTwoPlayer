@@ -24,11 +24,14 @@ public class GoalScoreLeft : MonoBehaviour
     #endregion
     #region Components
     BallMovement resetBall;
+    WildcardSpawn spawnReset;
     #endregion
 
     private void Start()
     {
+
         resetBall = GameObject.FindGameObjectWithTag("ball").GetComponent<BallMovement>();
+        spawnReset = GameObject.FindGameObjectWithTag("wildcardSpawner").GetComponent<WildcardSpawn>();
         playerLeftGKPosition = playerLeftGK.transform.position;
         playerLeftPosition = playerLeft.transform.position;
         playerRightPosition = playerRight.transform.position;
@@ -41,7 +44,7 @@ public class GoalScoreLeft : MonoBehaviour
         if (other.CompareTag("ball"))
         {
             AddScore();
-            DeleteWildcards();
+            DeleteWildcards("wildcardSpeed");
         }
     }
 
@@ -64,9 +67,14 @@ public class GoalScoreLeft : MonoBehaviour
         playerRightGK.transform.position = playerRightGKPosition;
     }
 
-    private void DeleteWildcards()
+    private void DeleteWildcards(string tag)
     {
-        Destroy(GameObject.FindGameObjectWithTag("wildcardSpeed"));
+        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag(tag);
+        foreach (GameObject target in gameObjects)
+        {
+            GameObject.Destroy(target);
+        }
+        spawnReset.spawnTimer = 0;
     }
     #endregion
 }
