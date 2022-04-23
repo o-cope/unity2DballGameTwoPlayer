@@ -45,6 +45,7 @@ public class GoalScoreLeft : MonoBehaviour
         {
             AddScore();
             DeleteWildcards("wildcardSpeed");
+            DeleteWildcards("wildcardDirection");
         }
     }
 
