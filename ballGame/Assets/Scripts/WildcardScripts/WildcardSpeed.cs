@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YellowWildcard : MonoBehaviour
+public class WildcardSpeed : MonoBehaviour
 {
     #region Public Variables
     #endregion
@@ -24,7 +24,7 @@ public class YellowWildcard : MonoBehaviour
     #region Triggers
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("yellowWildcard"))
+        if (other.CompareTag("wildcardSpeed"))
         {
             StartCoroutine(IncreaseSpeed());
             Destroy(other.gameObject);
@@ -38,12 +38,9 @@ public class YellowWildcard : MonoBehaviour
     #region Coroutines
     IEnumerator IncreaseSpeed()
     {
-        ballSpeed.rndSpeed = ballSpeed.rndSpeed * 1.5f;
-        yield return new WaitForSeconds(1);
+        ballSpeed.rndSpeed = ballSpeed.rndSpeed * 2f;
+        yield return new WaitForSeconds(1.5f);
         ballSpeed.rndSpeed = tempSpeed;
     }
     #endregion
-
 }
-
-

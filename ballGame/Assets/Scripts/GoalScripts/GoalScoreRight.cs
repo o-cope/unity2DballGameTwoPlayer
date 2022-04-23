@@ -67,7 +67,7 @@ public class GoalScoreRight : MonoBehaviour
 
     private void DeleteWildcards()
     {
-        Destroy(GameObject.FindGameObjectWithTag("yellowWildcard"));
+        Destroy(GameObject.FindGameObjectWithTag("wildcardSpeed"));
     }
     #endregion
 

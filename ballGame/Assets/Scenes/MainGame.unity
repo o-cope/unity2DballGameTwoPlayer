@@ -1879,7 +1879,7 @@ MonoBehaviour:
   spawnPool:
   - {fileID: 4521062381357697584, guid: 220762a8017be624d9b70e7a135a477f, type: 3}
   spawnRange: {fileID: 390388237}
-  limit: 10
+  limit: 3
 --- !u!4 &1780240372
 Transform:
   m_ObjectHideFlags: 0

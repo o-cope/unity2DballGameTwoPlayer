@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wildcard : MonoBehaviour
+public class WildcardSpawn : MonoBehaviour
 {
     #region Public Variables
     public float spawnTimer = 0f;
@@ -38,9 +38,9 @@ public class Wildcard : MonoBehaviour
         float screenX, screenY;
         Vector2 pos;
 
-        for(int i = 0; i < numToSpawn; i++)
+        for (int i = 0; i < numToSpawn; i++)
         {
-            randomItem =  Random.Range(0, spawnPool.Count);
+            randomItem = Random.Range(0, spawnPool.Count);
             toSpawn = spawnPool[randomItem];
 
             screenX = Random.Range(c.bounds.min.x, c.bounds.max.x);
