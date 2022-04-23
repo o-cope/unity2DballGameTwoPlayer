@@ -38,7 +38,7 @@ public class WildcardSpeed : MonoBehaviour
     #region Coroutines
     IEnumerator IncreaseSpeed()
     {
-        ballSpeed.rndSpeed = ballSpeed.rndSpeed * 2f;
+        ballSpeed.rndSpeed = ballSpeed.rndSpeed * 1.5f;
         yield return new WaitForSeconds(1.5f);
         ballSpeed.rndSpeed = tempSpeed;
     }

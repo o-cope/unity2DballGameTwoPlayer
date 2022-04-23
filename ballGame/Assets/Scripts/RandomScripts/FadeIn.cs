@@ -24,12 +24,23 @@ public class FadeIn : MonoBehaviour
 
     private void Update()
     {
-        timer += Time.deltaTime * 5;
+        Timer();
     }
 
     private void FixedUpdate()
     {
+        FadeInColour();
+    }
+
+    #region Method
+    private void FadeInColour()
+    {
         self.color = Color.Lerp(StartColor, EndColor, timer);
     }
 
+    private void Timer()
+    {
+        timer += Time.deltaTime * 5;
+    }
+    #endregion
 }

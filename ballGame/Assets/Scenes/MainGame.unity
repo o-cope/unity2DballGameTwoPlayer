@@ -1858,7 +1858,7 @@ GameObject:
   - component: {fileID: 1780240373}
   m_Layer: 0
   m_Name: GameSpawner
-  m_TagString: Untagged
+  m_TagString: wildcardSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1879,8 +1879,9 @@ MonoBehaviour:
   numToSpawn: 1
   spawnPool:
   - {fileID: 609851258849605047, guid: 7d3a9b2f488cb5844b15e4f5c1c8f820, type: 3}
+  - {fileID: 763169443564362073, guid: 6854fa0995d15d74c99169b1f1987019, type: 3}
   spawnRange: {fileID: 390388237}
-  limit: 10
+  spawnSpeed: 3
 --- !u!4 &1780240372
 Transform:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ball
   - wildcardSpeed
+  - wildcardSpawner
+  - wildcardDirection
   layers:
   - Default
   - TransparentFX

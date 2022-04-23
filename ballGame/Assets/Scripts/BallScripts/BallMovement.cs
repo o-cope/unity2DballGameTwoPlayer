@@ -39,7 +39,7 @@ public class BallMovement : MonoBehaviour
         rb.velocity = rndSpeed * (rb.velocity.normalized);
     }
 
-    private void BallRndDirection()
+    public void BallRndDirection()
     {
         rndSpeed = 5f;
         Vector2 direction = new Vector2(Random.Range(-1f, 1f), Random.Range(-0.1f, 0.1f));
