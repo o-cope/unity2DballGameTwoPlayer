@@ -20,7 +20,7 @@ public class WildcardSpeed : MonoBehaviour
         ballSpeed = GameObject.FindGameObjectWithTag("ball").GetComponent<BallMovement>();
         tempSpeed = ballSpeed.rndSpeed;
     }
-
+     
     #region Triggers
     private void OnTriggerEnter2D(Collider2D other)
     {

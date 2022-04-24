@@ -8,6 +8,8 @@ public class AIMove : MonoBehaviour
     #endregion
     #region Inspector Variables
     [SerializeField] private float moveSpeed;
+    [SerializeField] private Vector2 ballPos;
+    [SerializeField] private GameObject ballRef;
     #endregion
     #region Private Variable
     private float yInput;
@@ -20,31 +22,35 @@ public class AIMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     } //Onstartup executes
 
-    private void Update()
-    {
-        GetMoveInput();
-    }
+
 
     private void FixedUpdate()
     {
+        UpdateBallPos();
         MoveAI();
     }
 
 
-    //figure out ball.y and AI.y
-    //simulate keypress for movement based on correct direction
-    //apply movement
-
     #region Methods
     private void MoveAI()
     {
-        rb.velocity = new Vector2(0, yInput * moveSpeed);
-        Debug.Log(rb.velocity);
+        if (ballPos.y > transform.position.y)
+        {
+            rb.velocity = new Vector2(0, 1 * moveSpeed);
+        }
+        else if (ballPos.y + 0.2 > transform.position.y || ballPos.y - 0.2 > transform.position.y)
+        {
+            rb.velocity = new Vector2(0, 0);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, -1 * moveSpeed);
+        }
     }
 
-    private void GetMoveInput()
+    private void UpdateBallPos()
     {
-        yInput = Input.GetAxis("PlayerRight");
+        ballPos = new Vector2(ballRef.transform.position.x, ballRef.transform.position.y);
     }
     #endregion
 }
