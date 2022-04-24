@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIMove : MonoBehaviour
+public class AIGKMove : MonoBehaviour
 {
     #region Public Variables
     #endregion
@@ -33,19 +33,14 @@ public class AIMove : MonoBehaviour
     #region Methods
     private void MoveAI()
     {
-        if (CheckX())
-        {
-            MoveOppositeDirection();
-        }
-        else
-        {
-            MoveCorrectDirection();
-        }       
+        MoveCorrectDirection();
     }
+
     private void UpdateBallPos()
     {
         ballPos = new Vector2(ballRef.transform.position.x, ballRef.transform.position.y);
     }
+
     private void MoveCorrectDirection()
     {
         if (ballPos.y > transform.position.y)
@@ -63,21 +58,5 @@ public class AIMove : MonoBehaviour
             rb.velocity = new Vector2(0, -moveSpeed);
         }
     }
-    private void MoveOppositeDirection()
-    {
-        if (ballPos.y > transform.position.y)
-        {
-            rb.velocity = new Vector2(0, -moveSpeed);
-        }
-        else
-        {
-            rb.velocity = new Vector2(0, moveSpeed);
-        }
-    }
-    private bool CheckX()
-    {
-        return ballPos.x > transform.position.x;
-    }
-
     #endregion
 }

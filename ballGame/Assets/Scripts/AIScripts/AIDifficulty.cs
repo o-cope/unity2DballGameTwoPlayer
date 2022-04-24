@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIMove : MonoBehaviour
+public class AIDifficulty : MonoBehaviour
 {
     #region Public Variables
     #endregion
@@ -10,6 +10,7 @@ public class AIMove : MonoBehaviour
     [SerializeField] private float moveSpeed = 0f;
     [SerializeField] private Vector2 ballPos;
     [SerializeField] private GameObject ballRef;
+    [SerializeField] private int difficultyValue = 3;
     #endregion
     #region Private Variables
     #endregion
@@ -26,7 +27,7 @@ public class AIMove : MonoBehaviour
     private void FixedUpdate()
     {
         UpdateBallPos();
-        MoveAI();
+        MediumDifficultyMove();
     }
 
 
@@ -40,7 +41,7 @@ public class AIMove : MonoBehaviour
         else
         {
             MoveCorrectDirection();
-        }       
+        }
     }
     private void UpdateBallPos()
     {
@@ -72,6 +73,17 @@ public class AIMove : MonoBehaviour
         else
         {
             rb.velocity = new Vector2(0, moveSpeed);
+        }
+    }
+    private bool Chance(int n)
+    {
+        return Random.Range(0, n - 1) == 0;
+    }
+    private void MediumDifficultyMove()
+    {
+        if (!Chance(difficultyValue))
+        {
+            MoveAI();
         }
     }
     private bool CheckX()

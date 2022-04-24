@@ -2554,6 +2554,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8405154067684746430, guid: 9fff20073fcb29c44ba6b7dd6e3a915b, type: 3}
   m_PrefabInstance: {fileID: 7193818235963018015}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1688999967819755427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688999967819755425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d7159a7ec555f44b61431d9e351944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3.5
 --- !u!1001 &2230701855196111534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2751,7 +2764,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8405154067684746430, guid: 9fff20073fcb29c44ba6b7dd6e3a915b, type: 3}
+      propertyPath: m_Name
+      value: PlayerRightGoalkeeper
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 725881175, guid: 9fff20073fcb29c44ba6b7dd6e3a915b, type: 3}
+    - {fileID: 725881174, guid: 9fff20073fcb29c44ba6b7dd6e3a915b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9fff20073fcb29c44ba6b7dd6e3a915b, type: 3}
 --- !u!1001 &7231736452000713463
 PrefabInstance:
@@ -3014,3 +3033,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1652233006259563906, guid: 9fff20073fcb29c44ba6b7dd6e3a915b, type: 3}
   m_PrefabInstance: {fileID: 7193818235963018015}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8446636033521182366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446636033521182365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d7159a7ec555f44b61431d9e351944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7

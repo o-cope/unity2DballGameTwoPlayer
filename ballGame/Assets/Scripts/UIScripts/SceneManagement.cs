@@ -18,16 +18,14 @@ public class SceneManagement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            SetPause();
-        }
+        PressEscape();
     }
 
     #region Methods
     public void ResetCurrentScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
     }
 
     public void SetPause()
@@ -56,6 +54,14 @@ public class SceneManagement : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    private void PressEscape()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SetPause();
+        }
     }
 
 
