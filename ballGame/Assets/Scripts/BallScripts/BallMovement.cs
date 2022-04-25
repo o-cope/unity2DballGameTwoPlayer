@@ -13,11 +13,13 @@ public class BallMovement : MonoBehaviour
     #endregion
     #region Components
     Rigidbody2D rb;
+    AudioSource bounceClip;
     #endregion
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        bounceClip = GetComponent<AudioSource>();
         StartCoroutine(BallMove());
     }
 
@@ -30,6 +32,14 @@ public class BallMovement : MonoBehaviour
     {
         BallSpeedConstant();
     }
+
+
+    #region Collisions
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        bounceClip.Play();
+    }
+    #endregion
 
 
     #region Methods
@@ -56,6 +66,8 @@ public class BallMovement : MonoBehaviour
             StartCoroutine(BallMove());
         }
     }
+
+
 
 
     #endregion
