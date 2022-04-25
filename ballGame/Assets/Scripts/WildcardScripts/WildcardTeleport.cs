@@ -12,12 +12,12 @@ public class WildcardTeleport : MonoBehaviour
     #region Private Variables
     #endregion
     #region Components
-    //BallMovement rndDirection;
+    BallMovement rndDirection;
     #endregion
 
     private void Start()
     {
-        //rndDirection = GameObject.FindGameObjectWithTag("ball").GetComponent<BallMovement>();
+        rndDirection = GameObject.FindGameObjectWithTag("ball").GetComponent<BallMovement>();
     }
 
 
@@ -44,7 +44,7 @@ public class WildcardTeleport : MonoBehaviour
         Vector2 teleportPos;
         teleportPos = new Vector2(screenX, screenY);
         transform.position = teleportPos;
-        //rndDirection.BallMove
+        rndDirection.BallRndDirection();
     }
     #endregion 
 }
