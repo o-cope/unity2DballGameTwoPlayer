@@ -2194,7 +2194,7 @@ PrefabInstance:
       objectReference: {fileID: 978157131}
     - target: {fileID: 5115904687100973171, guid: 32341c50c90ab814d890d125da6af2c3, type: 3}
       propertyPath: spawnSpeed
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5115904687100973172, guid: 32341c50c90ab814d890d125da6af2c3, type: 3}
       propertyPath: m_RootOrder

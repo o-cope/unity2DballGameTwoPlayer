@@ -2467,7 +2467,7 @@ PrefabInstance:
       objectReference: {fileID: 301956716}
     - target: {fileID: 5115904687100973171, guid: 32341c50c90ab814d890d125da6af2c3, type: 3}
       propertyPath: spawnSpeed
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5115904687100973172, guid: 32341c50c90ab814d890d125da6af2c3, type: 3}
       propertyPath: m_RootOrder
@@ -2913,7 +2913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8184458158019018690, guid: 2fe2fbd2311b4db41842bf1481e6125f, type: 3}
       propertyPath: rotateMax
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fe2fbd2311b4db41842bf1481e6125f, type: 3}
