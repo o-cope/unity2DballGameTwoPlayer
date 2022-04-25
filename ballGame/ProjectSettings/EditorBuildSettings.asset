@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8a2dfa86c43137842b26f29c9701d045
   - enabled: 1
-    path: Assets/Scenes/MainMenuDifficultySelect.unity
+    path: Assets/Scenes/MainMenu1PDifficultySelect.unity
     guid: 6c097a85bb4c2e14e9ee73f816b37306
+  - enabled: 1
+    path: Assets/Scenes/MainMenu2PModeSelect.unity
+    guid: c24ee3221e1f391429d0ae489b5296ac
   - enabled: 1
     path: Assets/Scenes/1PlayerEasy.unity
     guid: ba7988a80f73a6f4794ab68d4b1e0022
@@ -24,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/1PlayerImpossible.unity
     guid: 9c5d38498ad424744a3d810701b3b542
   - enabled: 1
-    path: Assets/Scenes/2Player.unity
+    path: Assets/Scenes/2PlayerNormal.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/2PlayerNoRotationLock.unity
+    guid: 94a897d7ff6af1e469f57eb1e4cb0de8
   m_configObjects: {}

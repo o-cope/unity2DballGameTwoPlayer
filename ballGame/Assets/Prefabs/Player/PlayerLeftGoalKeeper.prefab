@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5401720986510345835}
   - component: {fileID: 6423400780300051232}
-  - component: {fileID: 7164811883609038826}
   - component: {fileID: 8673366500223506856}
   - component: {fileID: 8345748862446019328}
+  - component: {fileID: -8678349782144460532}
   m_Layer: 0
   m_Name: PlayerLeftGoalKeeper
   m_TagString: Untagged
@@ -85,20 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7164811883609038826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061715289891400372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cec3c934d2f32eb439c852c3e1adef39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3.5
-  keepRotationSame: {fileID: 2061715289891400372}
 --- !u!61 &8673366500223506856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,3 +132,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &-8678349782144460532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061715289891400372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68371ccf9e6f9a940b8a5c141bf03859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0

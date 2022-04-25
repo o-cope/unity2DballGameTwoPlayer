@@ -8,6 +8,7 @@ public class LeftPlayerMove : MonoBehaviour
     #endregion
     #region Inspector Variables
     [SerializeField] private float moveSpeed;
+    [SerializeField] private float rotateMax; 
     #endregion
     #region Private Variables
     private float yInput;
@@ -25,13 +26,13 @@ public class LeftPlayerMove : MonoBehaviour
     private void Update()
     {
         GetMoveInput();
-
+        GetRotateInput();
     }
 
     private void FixedUpdate()
     {
         MovePlayer();
-
+        RotatePlayer();
     }
 
     #region Methods
@@ -45,7 +46,15 @@ public class LeftPlayerMove : MonoBehaviour
         yInput = Input.GetAxis("PlayerLeft");
     }
 
+    private void GetRotateInput()
+    {
+        rotateInput = Input.GetAxis("PlayerLeftRotate");
+    }
 
+    private void RotatePlayer()
+    {
+        transform.rotation = Quaternion.Euler(0, 0, rotateInput * rotateMax);
+    }
 
     #endregion
 
