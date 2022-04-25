@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 127429725}
   - component: {fileID: 127429723}
   - component: {fileID: -3801014031020889728}
+  - component: {fileID: -5909782666903703795}
   m_Layer: 0
   m_Name: Ball
   m_TagString: ball
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 33965669
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 0, g: 1, b: 0.11664677, a: 1}
@@ -148,3 +149,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6411a4215706a904b8b9c4481d6d3ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5909782666903703795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000736028473499190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66c24302c834034c9d1d67ad4c1f7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRange: {fileID: 0}

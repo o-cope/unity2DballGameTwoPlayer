@@ -11,6 +11,7 @@ public class LeftPlayerMove : MonoBehaviour
     #endregion
     #region Private Variables
     private float yInput;
+    private float rotateInput;
     #endregion
     #region Components
     Rigidbody2D rb;
@@ -24,11 +25,13 @@ public class LeftPlayerMove : MonoBehaviour
     private void Update()
     {
         GetMoveInput();
+
     }
 
     private void FixedUpdate()
     {
         MovePlayer();
+
     }
 
     #region Methods
@@ -41,6 +44,9 @@ public class LeftPlayerMove : MonoBehaviour
     {
         yInput = Input.GetAxis("PlayerLeft");
     }
+
+
+
     #endregion
 
 }

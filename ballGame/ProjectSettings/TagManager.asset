@@ -8,6 +8,7 @@ TagManager:
   - wildcardSpeed
   - wildcardSpawner
   - wildcardDirection
+  - wildcardTeleport
   layers:
   - Default
   - TransparentFX
