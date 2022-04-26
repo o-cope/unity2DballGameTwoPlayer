@@ -8,10 +8,10 @@ public class AIGKMove : MonoBehaviour
     #endregion
     #region Inspector Variables
     [SerializeField] private float moveSpeed = 0f;
-    [SerializeField] private Vector2 ballPos;
     [SerializeField] private GameObject ballRef;
     #endregion
     #region Private Variables
+    private Vector2 ballPos;
     #endregion
     #region Components
     Rigidbody2D rb;

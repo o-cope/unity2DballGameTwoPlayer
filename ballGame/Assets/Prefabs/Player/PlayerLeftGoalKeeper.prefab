@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8678349782144460532}
   m_Layer: 0
   m_Name: PlayerLeftGoalKeeper
-  m_TagString: Untagged
+  m_TagString: playerLeftGK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

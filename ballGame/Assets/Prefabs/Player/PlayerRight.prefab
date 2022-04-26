@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 75175015001322718}
   m_Layer: 0
   m_Name: PlayerRight
-  m_TagString: Untagged
+  m_TagString: playerRight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  rotateMax: 0
 --- !u!60 &75175015001322718
 PolygonCollider2D:
   m_ObjectHideFlags: 0

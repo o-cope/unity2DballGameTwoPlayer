@@ -10,6 +10,11 @@ TagManager:
   - wildcardDirection
   - wildcardTeleport
   - wildcardSmall
+  - playerLeft
+  - playerRight
+  - wildcardScale
+  - playerLeftGK
+  - playerRightGK
   layers:
   - Default
   - TransparentFX

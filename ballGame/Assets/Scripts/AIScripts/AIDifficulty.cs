@@ -8,11 +8,11 @@ public class AIDifficulty : MonoBehaviour
     #endregion
     #region Inspector Variables
     [SerializeField] private float moveSpeed = 0f;
-    [SerializeField] private Vector2 ballPos;
     [SerializeField] private GameObject ballRef;
     [SerializeField] private int difficultyValue = 3;
     #endregion
     #region Private Variables
+    private Vector2 ballPos;
     #endregion
     #region Components
     Rigidbody2D rb;
