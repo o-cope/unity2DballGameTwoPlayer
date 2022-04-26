@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu2PModeSelect.unity
     guid: c24ee3221e1f391429d0ae489b5296ac
   - enabled: 1
-    path: Assets/Scenes/MainMenu2PSpinSelect.unity
+    path: Assets/Scenes/MainMenu2PCustomModeSelect.unity
     guid: d5aa0f28409e69e4c87eac58b5e75e5c
   - enabled: 1
     path: Assets/Scenes/1PlayerEasy.unity
@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2PlayerSpinMovement.unity
     guid: f160a22d08ee7894483a5b39c740b076
+  - enabled: 1
+    path: Assets/Scenes/2PlayerQuickSpawn.unity
+    guid: f1ae4ff346273e24cba51e52c6a23e12
   m_configObjects: {}

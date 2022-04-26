@@ -50,8 +50,9 @@ MonoBehaviour:
   - {fileID: 609851258849605047, guid: 7d3a9b2f488cb5844b15e4f5c1c8f820, type: 3}
   - {fileID: 763169443564362073, guid: 6854fa0995d15d74c99169b1f1987019, type: 3}
   - {fileID: 4170391360316094866, guid: 869cb684aa79521459d2593847e7e546, type: 3}
+  - {fileID: 6112760884769569434, guid: a0f8db0034b7e5240a333da1dcdaae89, type: 3}
   spawnRange: {fileID: 0}
-  spawnSpeed: 2
+  spawnSpeed: 7
 --- !u!82 &5115904687100973173
 AudioSource:
   m_ObjectHideFlags: 0

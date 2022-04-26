@@ -47,6 +47,7 @@ public class GoalScoreLeft : MonoBehaviour
             DeleteWildcards("wildcardSpeed");
             DeleteWildcards("wildcardDirection");
             DeleteWildcards("wildcardTeleport");
+            DeleteWildcards("wildcardSmall");
         }
     }
 

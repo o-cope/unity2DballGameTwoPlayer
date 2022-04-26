@@ -9,6 +9,7 @@ TagManager:
   - wildcardSpawner
   - wildcardDirection
   - wildcardTeleport
+  - wildcardSmall
   layers:
   - Default
   - TransparentFX

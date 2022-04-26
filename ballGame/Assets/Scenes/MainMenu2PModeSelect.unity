@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 57660258}
   - component: {fileID: 57660257}
   m_Layer: 5
-  m_Name: spinButton
+  m_Name: customButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,7 +351,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu2PSpinSelect
+          m_StringArgument: MainMenu2PCustomModeSelect
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &57660258
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 850887699}
   - component: {fileID: 850887698}
   m_Layer: 5
-  m_Name: spinText
+  m_Name: customText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SPIN
+  m_text: CUSTOM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
